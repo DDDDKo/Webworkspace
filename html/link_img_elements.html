@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크 및 이미지 HTML 요소</title>
+</head>
+<body>
+    <!-- <a> : 하이퍼링크를 사용하기 위한 요소 href 속성에 링크의 이동 경로를 작성 -->
+    <!-- HTML의 속성 값으로 문자열을 지정할 때 따옴표가 없어도 인식되지만 예기치 못한 문제가 발생할 수 있음-->
+    <a href="https://www.naver.com">Naver</a> <!-- 권고적으로 URL에 쌍따음표를 표시하기 -->
+    <a href=https://www.naver.com>Naver</a>
+
+    <!-- a 요소의 href 속성 값으로 URL 주소 뿐만 아니라 파일명(로컬 파일 경로), HTML의 ID 값도 올 수 있음-->
+    <a href="./link_next.html">다음 페이지</a>
+
+    <a href="#section1">Section 1 으로 이동</a>
+
+    <div style="height: 1000px; background-color: rgba(0, 0, 0, 0.2)"></div>
+
+    <h1 id="section1">Section 1</h1>
+
+    <div style="height: 1000px; background-color: rgba(0, 0, 0, .2)"></div>
+
+    <!-- <img> : 이미지를 페이지에 출력하기 위한 요소 src 속성으로 출력할 파일의 경로를 지정 -->
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20130831_287%2Fgkdud8026_1377907998783ecFhs_PNG%2Funtitled.png&type=ofullfill340_600_png" />
+
+    <img src="../resource/강아지.jpg" />
+
+    <!-- 미디어 요소는 alt 속성에 설명을 작성하는 것을 권고 -->
+    <!-- alt 속성은 미디어가 표현되지 않았을때 대체 텍스트를 지정하는 요소 -->
+    <img src="../resource/강아지.jp " alt="강알지 사진"/>
+
+</body>
+</html>
