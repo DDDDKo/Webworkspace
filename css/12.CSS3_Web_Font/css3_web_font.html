@@ -11,25 +11,36 @@
         /* 구글 폰트 : https://fonts.google.com/?subset=korean&noto.script=Kore */
 
         /*
-            CDN 링크 방식 : 
+            CDN 링크 방식 : @import 방식으로 웹 폰트를 다운받아 사용
         */
-        
-
+        @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+        .nanum-pen {
+            font-family: "Nanum Pen Script";
+            font-weight: 400;
+            font-style: normal;
+        }
 
         /*
-            서버 폰트 로딩 방식 : 
+            서버 폰트 로딩 방식 : @font-face 방식으로 웹 폰트를 등록해서 사용
         */
-        
-
+        @font-face {
+            font-family: 'YEONGJUSeonbiTTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .YEONGJUSeonbiTTF{
+            font-family: 'YEONGJUSeonbiTTF';
+        }
 
     </style>
 
 </head>
-<body>
+<body style="background-color: rgba(0, 0 ,0, 0.8);">
     
     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-    <h2 class="nanum-gothic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-    <h2 class="pretendard">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <h2 class="nanum-pen">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <h2 class="YEONGJUSeonbiTTF">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 
 </body>
 </html>
