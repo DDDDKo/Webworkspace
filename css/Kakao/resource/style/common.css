@@ -37,6 +37,44 @@
     background-size: 100%;
     vertical-align: top;
 }
+
+/* Contents Box */
+.contents-box{
+    display: grid;
+    grid-template: 
+    "communication busniess" 180px
+    "life-style shopping" 180px
+    "entertainment social" 180px
+    / 1fr 1fr;
+    gap: 16px;
+}
+.content-card{
+    background-color: rgba(240, 240, 240, 1);
+    margin: 16px 0px 0px 16px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 64px;
+}
+.content-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+.content-icons-box{
+    display: flex;
+    gap: 12px;
+}
+.icon-button{
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+}
+.icon-button:hover{
+    cursor: pointer;
+}
+
+/*  More Box  */
 .more-box{
     display: flex;
     justify-content: center;
@@ -46,9 +84,28 @@
     width: 316px;
     height: 76px;
     border-radius: 38px;
-    color: rgba(10, 10, 10, 1);
     background-color: rgba(240, 240, 240, 1);
-    text-align: center;
     font-size: 22px;
     letter-spacing: -0.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.more-button:hover{
+    cursor: pointer;
+}
+.round-black{
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.more-button:hover .round-black{
+    background-color: rgba(0, 0, 0, 0.8);
 }
