@@ -8,10 +8,47 @@
     src: url(../font/KakaoBold.ttf);
 }
 
-.kakao-regular-font{
+*{
     font-family: 'KakaoRegular', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
-.kakao-bold-font{
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 1712px;
+    height: 846px;
+}
+.title-box{
+    font-size: 52px;
+    line-height: 78px;
+    letter-spacing: -1px;
+    font-weight: 400;
     font-family: 'KakaoBold', sans-serif;
+}
+.title-box::before{
+    background-image: url(https://www.kakaocorp.com/page/ico_tit_service.gif);
+    width: 78px;
+    height: 78px;
+    display: inline-block;
+    content: "";
+    background-size: 100%;
+    vertical-align: top;
+}
+.more-box{
+    display: flex;
+    justify-content: center;
+    line-height: 76px;
+}
+.more-button{
+    width: 316px;
+    height: 76px;
+    border-radius: 38px;
+    color: rgba(10, 10, 10, 1);
+    background-color: rgba(240, 240, 240, 1);
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: -0.6px;
 }
