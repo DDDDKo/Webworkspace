@@ -14,12 +14,19 @@
     padding: 0px;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    min-width: 1712px;
+}
+
 #wrapper{
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     gap: 60px;
+    
     width: 1712px;
-    height: 846px;
 }
 .title-box{
     font-size: 52px;
@@ -69,11 +76,69 @@
     width: 56px;
     height: 56px;
     border-radius: 12px;
+    background-size: 100%;
 }
 .icon-button:hover{
     cursor: pointer;
 }
-
+.more{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    line-height: 56px;
+    font-size: 32px;
+}
+.more:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.kakaotalk{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9424536018c00001.png');
+}
+.daum{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9425290018c00001.png');
+}
+.story{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c942653a018c00001.png');
+}
+.channel{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9468d8a018c00001.png');
+}
+.cloud{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9469d4a018c00001.png');
+}
+.agit{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c946aa55018c00001.png');
+}
+.kakaomap{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c947f606018c00001.png');
+}
+.kakaot{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94804d8018c00001.png')
+}
+.kakakobank{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c9481249018c00001.png');
+}
+.gift{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94a2627018c00001.png');
+}
+.shopping{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94a89d4018c00001.png');
+}
+.zigzag{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94a96f9018c00001.png');
+}
+.page{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94b668f018c00001.png');
+}
+.piccoma{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94b7687018c00001.png');
+}
+.melon{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94b83e3018c00001.png');
+}
+.together{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/kakaoService/c94c09cc018c00001.png');
+}
 /*  More Box  */
 .more-box{
     display: flex;
