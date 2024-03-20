@@ -98,5 +98,4 @@ const findIndexResult = array.findIndex (function (item, index){
 });
 console.log(findIndexResult);
 
-console.log(array.includes(2));
 console.log('==============================');
