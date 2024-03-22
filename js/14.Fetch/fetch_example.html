@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch 연습</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.7);">
+    <div>
+        <span>이름 : </span><input id="name" type="text"/>
+        <span>나이 : </span><input id="age" type="number"/>
+        <button id="submit" type="button" onclick="onSubmitHandler()">전송</button>
+    </div>
+    <script>
+        const onSubmitHandler = function (event) {
+            const nameInputElement = document.getElementById('name');
+            const ageInputElement = document.getElementById('age');
+
+            const name = nameInputElement.value;
+            const age =ageInputElement.value;
+
+            fetch(`http://localhost:4000/request-data/path-variable/${age}/${name}`)
+                        .then(function (response){
+                            console.log(response);
+                        })
+                }
+    </script>
+</body>
+</html>
