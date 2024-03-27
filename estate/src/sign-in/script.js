@@ -14,7 +14,7 @@ function onSignInButtonClickHandler(event) {
 }
 
 function onSignUpLinkClickHandler(event) {
-    window.location.href = '../sign-up/index.html';
+    window.location.href = '../sign-up/';
 }
 
 const signUpLinkElement = document.getElementById('sign-up-link');

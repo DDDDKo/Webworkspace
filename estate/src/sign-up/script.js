@@ -13,6 +13,9 @@ const checkAuthNumberButtonElement = document.getElementById('check-auth-number-
 
 const idMessageElement = document.getElementById('id-message');
 const emailMessageElement = document.getElementById('email-message');
+const authNumberMessageElement = document.getElementById('auth-number-message');
+
+const signinLinkElement = document.getElementById('sign-in-link');
 
 function onIdInputHandler (event) {
     const value = event.target.value;
@@ -54,8 +57,9 @@ function onCheckDuplicateClickHandler (event) {
 
 function onCheckEmailClickHandler (event) {
     const emailValue = emailInputElement.value;
+    if(!emailValue) return;
 
-    const emailReg = /^[a-zA-Z0-9]*@([-.]?[a-zA-Z0-9])*\\.[a-zA-Z]{2,4}$/; //자바 스크립트에서의 정규식
+    const emailReg = /^[a-zA-Z0-9]*@([-.]?[a-zA-Z0-9])*\.[a-zA-Z]{2,4}$/; //자바 스크립트에서의 정규식
     const isEmail = emailReg.test(emailValue);
     if(!isEmail){
         emailMessageElement.className = 'input-message error';
@@ -74,6 +78,26 @@ function onCheckEmailClickHandler (event) {
     emailMessageElement.textContent = '인증번호가 전송되었습니다.'
 }
 
-checkDuplicateButtonElement.addEventListener('click', onCheckDuplicateClickHandler);
+function onCheckAuthNumberClickHandler (event) {
+    const authNumberValue = authNumberInputElement.value;
+    if(!authNumberValue) return;
 
+    const isEqualAuthNumber = authNumberValue === AUTH_NUMBER;
+    if(!isEqualAuthNumber) {
+        authNumberMessageElement.className = 'input-message error';
+        authNumberMessageElement.textContent = '인증번호가 일치하지 않습니다.';
+        return;
+    }
+    authNumberMessageElement.className = 'input-message primary';
+    authNumberMessageElement.textContent = '인증번호가 확인되었습니다.';
+}
+
+checkDuplicateButtonElement.addEventListener('click', onCheckDuplicateClickHandler);
 checkEmailButtonElement.addEventListener('click', onCheckEmailClickHandler);
+checkAuthNumberButtonElement.addEventListener('click', onCheckAuthNumberClickHandler);
+
+function onSignUpLinkClickHandler(event) {
+    window.location.href = '../sign-in/';
+}
+
+signinLinkElement.addEventListener('click', onSignUpLinkClickHandler);
