@@ -129,7 +129,8 @@ function onCheckDuplicateClickHandler (event) {
         idMessageElement.className = 'input-message error';
         idMessageElement.textContent = '이미 사용중인 아이디 입니다.';
         return;
-    }// 입력한 id가 중복되지 않는다면 idMessageElement의 className을 'input-message primary'로 바꾸고, textContent를 '사용 가능한 아이디 입니다.'로 바꾼다
+    }
+    // 입력한 id가 중복되지 않는다면 idMessageElement의 className을 'input-message primary'로 바꾸고, textContent를 '사용 가능한 아이디 입니다.'로 바꾼다
     idMessageElement.className = 'input-message primary';
     idMessageElement.textContent = '사용 가능한 아이디 입니다.';
 }
